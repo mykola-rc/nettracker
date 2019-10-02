@@ -15,6 +15,8 @@
 		8C88876323442BBD003E4D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C88876123442BBD003E4D2A /* LaunchScreen.storyboard */; };
 		8C88876E23442BBD003E4D2A /* Net_Worth_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88876D23442BBD003E4D2A /* Net_Worth_TrackerTests.swift */; };
 		8C88877923442BBD003E4D2A /* Net_Worth_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88877823442BBD003E4D2A /* Net_Worth_TrackerUITests.swift */; };
+		8C88878A23443342003E4D2A /* AccountAmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88878923443342003E4D2A /* AccountAmountCell.swift */; };
+		8C88878C234433A6003E4D2A /* AccountNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88878B234433A6003E4D2A /* AccountNameCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8C88877423442BBD003E4D2A /* Net Worth TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Net Worth TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C88877823442BBD003E4D2A /* Net_Worth_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Net_Worth_TrackerUITests.swift; sourceTree = "<group>"; };
 		8C88877A23442BBD003E4D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C88878923443342003E4D2A /* AccountAmountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAmountCell.swift; sourceTree = "<group>"; };
+		8C88878B234433A6003E4D2A /* AccountNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNameCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				8C88875623442BBC003E4D2A /* AppDelegate.swift */,
 				8C88875823442BBC003E4D2A /* SceneDelegate.swift */,
 				8C88875A23442BBC003E4D2A /* ViewController.swift */,
+				8C888788234431DC003E4D2A /* Views */,
 				8C88875C23442BBC003E4D2A /* Main.storyboard */,
 				8C88875F23442BBD003E4D2A /* Assets.xcassets */,
 				8C88876123442BBD003E4D2A /* LaunchScreen.storyboard */,
@@ -126,6 +131,15 @@
 				8C88877A23442BBD003E4D2A /* Info.plist */,
 			);
 			path = "Net Worth TrackerUITests";
+			sourceTree = "<group>";
+		};
+		8C888788234431DC003E4D2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C88878B234433A6003E4D2A /* AccountNameCell.swift */,
+				8C88878923443342003E4D2A /* AccountAmountCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C88875B23442BBC003E4D2A /* ViewController.swift in Sources */,
+				8C88878C234433A6003E4D2A /* AccountNameCell.swift in Sources */,
 				8C88875723442BBC003E4D2A /* AppDelegate.swift in Sources */,
+				8C88878A23443342003E4D2A /* AccountAmountCell.swift in Sources */,
 				8C88875923442BBC003E4D2A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
