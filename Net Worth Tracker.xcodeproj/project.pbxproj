@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C88875723442BBC003E4D2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88875623442BBC003E4D2A /* AppDelegate.swift */; };
+		8C88875923442BBC003E4D2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88875823442BBC003E4D2A /* SceneDelegate.swift */; };
+		8C88875B23442BBC003E4D2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88875A23442BBC003E4D2A /* ViewController.swift */; };
+		8C88875E23442BBC003E4D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C88875C23442BBC003E4D2A /* Main.storyboard */; };
+		8C88876023442BBD003E4D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C88875F23442BBD003E4D2A /* Assets.xcassets */; };
+		8C88876323442BBD003E4D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C88876123442BBD003E4D2A /* LaunchScreen.storyboard */; };
+		8C88876E23442BBD003E4D2A /* Net_Worth_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88876D23442BBD003E4D2A /* Net_Worth_TrackerTests.swift */; };
+		8C88877923442BBD003E4D2A /* Net_Worth_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88877823442BBD003E4D2A /* Net_Worth_TrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C88876A23442BBD003E4D2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C88874B23442BBC003E4D2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C88875223442BBC003E4D2A;
+			remoteInfo = "Net Worth Tracker";
+		};
+		8C88877523442BBD003E4D2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C88874B23442BBC003E4D2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C88875223442BBC003E4D2A;
+			remoteInfo = "Net Worth Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C88875323442BBC003E4D2A /* Net Worth Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Net Worth Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C88875623442BBC003E4D2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C88875823442BBC003E4D2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C88875A23442BBC003E4D2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C88875D23442BBC003E4D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C88875F23442BBD003E4D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C88876223442BBD003E4D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C88876423442BBD003E4D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C88876923442BBD003E4D2A /* Net Worth TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Net Worth TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C88876D23442BBD003E4D2A /* Net_Worth_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Net_Worth_TrackerTests.swift; sourceTree = "<group>"; };
+		8C88876F23442BBD003E4D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C88877423442BBD003E4D2A /* Net Worth TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Net Worth TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C88877823442BBD003E4D2A /* Net_Worth_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Net_Worth_TrackerUITests.swift; sourceTree = "<group>"; };
+		8C88877A23442BBD003E4D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C88875023442BBC003E4D2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C88876623442BBD003E4D2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C88877123442BBD003E4D2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C88874A23442BBC003E4D2A = {
+			isa = PBXGroup;
+			children = (
+				8C88875523442BBC003E4D2A /* Net Worth Tracker */,
+				8C88876C23442BBD003E4D2A /* Net Worth TrackerTests */,
+				8C88877723442BBD003E4D2A /* Net Worth TrackerUITests */,
+				8C88875423442BBC003E4D2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C88875423442BBC003E4D2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C88875323442BBC003E4D2A /* Net Worth Tracker.app */,
+				8C88876923442BBD003E4D2A /* Net Worth TrackerTests.xctest */,
+				8C88877423442BBD003E4D2A /* Net Worth TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C88875523442BBC003E4D2A /* Net Worth Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				8C88875623442BBC003E4D2A /* AppDelegate.swift */,
+				8C88875823442BBC003E4D2A /* SceneDelegate.swift */,
+				8C88875A23442BBC003E4D2A /* ViewController.swift */,
+				8C88875C23442BBC003E4D2A /* Main.storyboard */,
+				8C88875F23442BBD003E4D2A /* Assets.xcassets */,
+				8C88876123442BBD003E4D2A /* LaunchScreen.storyboard */,
+				8C88876423442BBD003E4D2A /* Info.plist */,
+			);
+			path = "Net Worth Tracker";
+			sourceTree = "<group>";
+		};
+		8C88876C23442BBD003E4D2A /* Net Worth TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C88876D23442BBD003E4D2A /* Net_Worth_TrackerTests.swift */,
+				8C88876F23442BBD003E4D2A /* Info.plist */,
+			);
+			path = "Net Worth TrackerTests";
+			sourceTree = "<group>";
+		};
+		8C88877723442BBD003E4D2A /* Net Worth TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C88877823442BBD003E4D2A /* Net_Worth_TrackerUITests.swift */,
+				8C88877A23442BBD003E4D2A /* Info.plist */,
+			);
+			path = "Net Worth TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C88875223442BBC003E4D2A /* Net Worth Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C88877D23442BBD003E4D2A /* Build configuration list for PBXNativeTarget "Net Worth Tracker" */;
+			buildPhases = (
+				8C88874F23442BBC003E4D2A /* Sources */,
+				8C88875023442BBC003E4D2A /* Frameworks */,
+				8C88875123442BBC003E4D2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Net Worth Tracker";
+			productName = "Net Worth Tracker";
+			productReference = 8C88875323442BBC003E4D2A /* Net Worth Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C88876823442BBD003E4D2A /* Net Worth TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C88878023442BBD003E4D2A /* Build configuration list for PBXNativeTarget "Net Worth TrackerTests" */;
+			buildPhases = (
+				8C88876523442BBD003E4D2A /* Sources */,
+				8C88876623442BBD003E4D2A /* Frameworks */,
+				8C88876723442BBD003E4D2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C88876B23442BBD003E4D2A /* PBXTargetDependency */,
+			);
+			name = "Net Worth TrackerTests";
+			productName = "Net Worth TrackerTests";
+			productReference = 8C88876923442BBD003E4D2A /* Net Worth TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C88877323442BBD003E4D2A /* Net Worth TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C88878323442BBD003E4D2A /* Build configuration list for PBXNativeTarget "Net Worth TrackerUITests" */;
+			buildPhases = (
+				8C88877023442BBD003E4D2A /* Sources */,
+				8C88877123442BBD003E4D2A /* Frameworks */,
+				8C88877223442BBD003E4D2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C88877623442BBD003E4D2A /* PBXTargetDependency */,
+			);
+			name = "Net Worth TrackerUITests";
+			productName = "Net Worth TrackerUITests";
+			productReference = 8C88877423442BBD003E4D2A /* Net Worth TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C88874B23442BBC003E4D2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Mykola Burynok";
+				TargetAttributes = {
+					8C88875223442BBC003E4D2A = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					8C88876823442BBD003E4D2A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 8C88875223442BBC003E4D2A;
+					};
+					8C88877323442BBD003E4D2A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 8C88875223442BBC003E4D2A;
+					};
+				};
+			};
+			buildConfigurationList = 8C88874E23442BBC003E4D2A /* Build configuration list for PBXProject "Net Worth Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C88874A23442BBC003E4D2A;
+			productRefGroup = 8C88875423442BBC003E4D2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C88875223442BBC003E4D2A /* Net Worth Tracker */,
+				8C88876823442BBD003E4D2A /* Net Worth TrackerTests */,
+				8C88877323442BBD003E4D2A /* Net Worth TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C88875123442BBC003E4D2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C88876323442BBD003E4D2A /* LaunchScreen.storyboard in Resources */,
+				8C88876023442BBD003E4D2A /* Assets.xcassets in Resources */,
+				8C88875E23442BBC003E4D2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C88876723442BBD003E4D2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C88877223442BBD003E4D2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C88874F23442BBC003E4D2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C88875B23442BBC003E4D2A /* ViewController.swift in Sources */,
+				8C88875723442BBC003E4D2A /* AppDelegate.swift in Sources */,
+				8C88875923442BBC003E4D2A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C88876523442BBD003E4D2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C88876E23442BBD003E4D2A /* Net_Worth_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C88877023442BBD003E4D2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C88877923442BBD003E4D2A /* Net_Worth_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C88876B23442BBD003E4D2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C88875223442BBC003E4D2A /* Net Worth Tracker */;
+			targetProxy = 8C88876A23442BBD003E4D2A /* PBXContainerItemProxy */;
+		};
+		8C88877623442BBD003E4D2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C88875223442BBC003E4D2A /* Net Worth Tracker */;
+			targetProxy = 8C88877523442BBD003E4D2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C88875C23442BBC003E4D2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C88875D23442BBC003E4D2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C88876123442BBD003E4D2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C88876223442BBD003E4D2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C88877B23442BBD003E4D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C88877C23442BBD003E4D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C88877E23442BBD003E4D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Net Worth Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kima.Net-Worth-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C88877F23442BBD003E4D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Net Worth Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kima.Net-Worth-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C88878123442BBD003E4D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Net Worth TrackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kima.Net-Worth-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Net Worth Tracker.app/Net Worth Tracker";
+			};
+			name = Debug;
+		};
+		8C88878223442BBD003E4D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Net Worth TrackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kima.Net-Worth-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Net Worth Tracker.app/Net Worth Tracker";
+			};
+			name = Release;
+		};
+		8C88878423442BBD003E4D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Net Worth TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kima.Net-Worth-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Net Worth Tracker";
+			};
+			name = Debug;
+		};
+		8C88878523442BBD003E4D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Net Worth TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kima.Net-Worth-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Net Worth Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C88874E23442BBC003E4D2A /* Build configuration list for PBXProject "Net Worth Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C88877B23442BBD003E4D2A /* Debug */,
+				8C88877C23442BBD003E4D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C88877D23442BBD003E4D2A /* Build configuration list for PBXNativeTarget "Net Worth Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C88877E23442BBD003E4D2A /* Debug */,
+				8C88877F23442BBD003E4D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C88878023442BBD003E4D2A /* Build configuration list for PBXNativeTarget "Net Worth TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C88878123442BBD003E4D2A /* Debug */,
+				8C88878223442BBD003E4D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C88878323442BBD003E4D2A /* Build configuration list for PBXNativeTarget "Net Worth TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C88878423442BBD003E4D2A /* Debug */,
+				8C88878523442BBD003E4D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C88874B23442BBC003E4D2A /* Project object */;
+}
