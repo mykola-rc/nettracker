@@ -15,10 +15,14 @@ enum AccountsTableViewModelType {
 
 class AccountsTableViewModel {
     
+    let headerTitle: String
+    let footerTitle: String
     let type: AccountsTableViewModelType
     let sectionViewModels = Observable<[SectionViewModel]>(value: [])
     
-    init(type: AccountsTableViewModelType) {
+    init(type: AccountsTableViewModelType, headerTitle: String, footerTitle: String) {
         self.type = type
+        self.headerTitle = headerTitle
+        self.footerTitle = footerTitle
     }
 }

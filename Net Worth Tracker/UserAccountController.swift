@@ -29,12 +29,12 @@ class UserAccountsController {
         
         let cashAndInvestments = sectionViewModelsFor(userAccounts.assets.cashAndInvestments, title: "Cash and Investments")
         let longTermAssets = sectionViewModelsFor(userAccounts.assets.longTermAssets, title: "Long Term Assets")
-        let assetsTableViewModel = AccountsTableViewModel(type: .assets)
+        let assetsTableViewModel = AccountsTableViewModel(type: .assets, headerTitle: "Assets", footerTitle: "Total Assets")
         assetsTableViewModel.sectionViewModels.value = [cashAndInvestments, longTermAssets]
         
         let shortTerm = sectionViewModelsFor(userAccounts.liabilities.shortTerm, title: "Short Term Liabilities")
         let longTermDebt = sectionViewModelsFor(userAccounts.liabilities.longTermDebt, title: "Long Term Debt")
-        let liabilitiesTableViewModel = AccountsTableViewModel(type: .liabilities)
+        let liabilitiesTableViewModel = AccountsTableViewModel(type: .liabilities, headerTitle: "Liabilities", footerTitle: "Total Liabilities")
         liabilitiesTableViewModel.sectionViewModels.value = [shortTerm, longTermDebt]
         
         self.viewModel.tableViewModels.value = [assetsTableViewModel, liabilitiesTableViewModel]

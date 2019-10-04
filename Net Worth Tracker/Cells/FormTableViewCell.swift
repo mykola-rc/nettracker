@@ -17,6 +17,18 @@ class FormTableViewCell: UITableViewCell {
     
     var viewModel: AccountsTableViewModel? {
         didSet {
+            if let headerTitle = viewModel?.headerTitle {
+                
+                headerView = TableHeaderView(frame: CGRect(x: 0.0, y: 0.0, width: 414, height: 44.0))
+                headerView?.setTitle(headerTitle)
+                formTableView.tableHeaderView = headerView
+            }
+            if let footerTitle = viewModel?.footerTitle {
+                
+                footerView = TableFooterView(frame: CGRect(x: 0.0, y: 0.0, width: 414, height: 44.0))
+                footerView?.setTitle(footerTitle)
+                formTableView.tableFooterView = footerView
+            }
             formTableView.reloadData()
         }
     }
@@ -25,17 +37,13 @@ class FormTableViewCell: UITableViewCell {
         return UserAccountsController()
     }()
     
+    var headerView: TableHeaderView?
+    var footerView: TableFooterView?
+    
     fileprivate let formTableView: FormTableView = {
         let tbl = FormTableView()
         tbl.estimatedRowHeight(50)
         tbl.estimatedSectionHeaderHeight(50)
-        let headerView = TableHeaderView(frame: CGRect(x: 0.0, y: 0.0, width: 414, height: 44.0))
-        headerView.setTitle("Assets")
-        tbl.tableHeaderView = headerView
-        let footerView = TableFooterView(frame: CGRect(x: 0.0, y: 0.0, width: 414, height: 44.0))
-        //        let sectionViewModel = viewModel.sectionViewModels.value[0]
-        footerView.setTitle("Total Assets")
-        tbl.tableFooterView = footerView
         tbl.translatesAutoresizingMaskIntoConstraints = false
         tbl.separatorStyle = .none
         tbl.registerClass(AccountValueCell.self)
