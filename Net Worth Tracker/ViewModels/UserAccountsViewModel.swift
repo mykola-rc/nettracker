@@ -10,6 +10,5 @@ import Foundation
 
 struct UserAccountsViewModel {
     
-    var assetsViewModel = AssetsTableViewModel()
-    var liabilitiesViewModel = AssetsTableViewModel()
+    let tableViewModels = Observable<[AccountsTableViewModel]>(value: [])
 }

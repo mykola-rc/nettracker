@@ -8,7 +8,17 @@
 
 import Foundation
 
-class AssetsTableViewModel {
+enum AccountsTableViewModelType {
+    case assets
+    case liabilities
+}
+
+class AccountsTableViewModel {
     
+    let type: AccountsTableViewModelType
     let sectionViewModels = Observable<[SectionViewModel]>(value: [])
+    
+    init(type: AccountsTableViewModelType) {
+        self.type = type
+    }
 }

@@ -29,7 +29,7 @@
 		D90B1DD123469A2F00FA09BB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DD023469A2F00FA09BB /* Observable.swift */; };
 		D90B1DD323469B2D00FA09BB /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DD223469B2D00FA09BB /* CellConfigurable.swift */; };
 		D90B1DD52346AFA000FA09BB /* UserAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DD42346AFA000FA09BB /* UserAccountController.swift */; };
-		D90B1DD72346B16D00FA09BB /* AssetsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DD62346B16D00FA09BB /* AssetsTableViewModel.swift */; };
+		D90B1DD72346B16D00FA09BB /* AccountsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DD62346B16D00FA09BB /* AccountsTableViewModel.swift */; };
 		D90B1DD92346B1D600FA09BB /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DD82346B1D600FA09BB /* SectionViewModel.swift */; };
 		D90B1DDC2346C0E200FA09BB /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DDB2346C0E200FA09BB /* SectionHeaderView.swift */; };
 		D9B305362346D96A00D10845 /* UserAccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B305352346D96A00D10845 /* UserAccountsViewModel.swift */; };
@@ -87,7 +87,7 @@
 		D90B1DD023469A2F00FA09BB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		D90B1DD223469B2D00FA09BB /* CellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
 		D90B1DD42346AFA000FA09BB /* UserAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountController.swift; sourceTree = "<group>"; };
-		D90B1DD62346B16D00FA09BB /* AssetsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsTableViewModel.swift; sourceTree = "<group>"; };
+		D90B1DD62346B16D00FA09BB /* AccountsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTableViewModel.swift; sourceTree = "<group>"; };
 		D90B1DD82346B1D600FA09BB /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
 		D90B1DDB2346C0E200FA09BB /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		D9B305352346D96A00D10845 /* UserAccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountsViewModel.swift; sourceTree = "<group>"; };
@@ -214,7 +214,7 @@
 				D90B1DCC234698A300FA09BB /* RowViewModel.swift */,
 				D90B1DC92346985500FA09BB /* AccountValueCellViewModel.swift */,
 				D90B1DD82346B1D600FA09BB /* SectionViewModel.swift */,
-				D90B1DD62346B16D00FA09BB /* AssetsTableViewModel.swift */,
+				D90B1DD62346B16D00FA09BB /* AccountsTableViewModel.swift */,
 				D9B305352346D96A00D10845 /* UserAccountsViewModel.swift */,
 			);
 			path = ViewModels;
@@ -402,7 +402,7 @@
 				D90B1DCF234699CC00FA09BB /* Double+Extensions.swift in Sources */,
 				D9CCA43B23452DAF001FB88A /* UIView+Extensions.swift in Sources */,
 				D90B1DDC2346C0E200FA09BB /* SectionHeaderView.swift in Sources */,
-				D90B1DD72346B16D00FA09BB /* AssetsTableViewModel.swift in Sources */,
+				D90B1DD72346B16D00FA09BB /* AccountsTableViewModel.swift in Sources */,
 				8C88875923442BBC003E4D2A /* SceneDelegate.swift in Sources */,
 				D90B1DCA2346985500FA09BB /* AccountValueCellViewModel.swift in Sources */,
 				D90B1DC6234690E300FA09BB /* Account.swift in Sources */,

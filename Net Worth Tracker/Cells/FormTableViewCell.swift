@@ -15,12 +15,9 @@ enum TableType {
 
 class FormTableViewCell: UITableViewCell {
     
-    var viewModel: AssetsTableViewModel {
-        switch tableType {
-        case .assets:
-            return controller.viewModel.assetsViewModel
-        case .liabilities:
-            return controller.viewModel.liabilitiesViewModel
+    var viewModel: AccountsTableViewModel? {
+        didSet {
+            formTableView.reloadData()
         }
     }
     
@@ -68,12 +65,12 @@ class FormTableViewCell: UITableViewCell {
         formTableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         
         initBinding()
-        controller.start()
+//        controller.start()
     }
     
     private func initBinding() {
         
-        viewModel.sectionViewModels.addObserver(fireNow: false) { [weak self] (sectionViewModels) in
+        viewModel?.sectionViewModels.addObserver(fireNow: false) { [weak self] (sectionViewModels) in
             self?.formTableView.reloadData()
         }
     }
@@ -104,17 +101,20 @@ class FormTableViewCell: UITableViewCell {
 
 extension FormTableViewCell: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return viewModel.sectionViewModels.value.count
+        return viewModel?.sectionViewModels.value.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionViewModel = viewModel.sectionViewModels.value[section]
-        return sectionViewModel.rowViewModels.count
+        let sectionViewModel = viewModel?.sectionViewModels.value[section]
+        return sectionViewModel?.rowViewModels.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let sectionViewModel = viewModel.sectionViewModels.value[indexPath.section]
+        guard let sectionViewModel = viewModel?.sectionViewModels.value[indexPath.section] else {
+            return UITableViewCell()
+        }
+        
         let rowViewModel = sectionViewModel.rowViewModels[indexPath.row]
 
         let cell = tableView.dequeueReusableCell(withIdentifier: controller.cellIdentifier(for: rowViewModel), for: indexPath)
@@ -131,15 +131,20 @@ extension FormTableViewCell: UITableViewDataSource {
 extension FormTableViewCell: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionViewModel = viewModel.sectionViewModels.value[indexPath.section]
+        guard let sectionViewModel = viewModel?.sectionViewModels.value[indexPath.section] else {
+            return
+        }
         if let rowViewModel = sectionViewModel.rowViewModels[indexPath.row] as? ViewModelPressible {
             rowViewModel.cellPressed?()
         }
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let sectionViewModel = viewModel?.sectionViewModels.value[section] else {
+            return nil
+        }
+        
         let view = SectionHeaderView()
-        let sectionViewModel = viewModel.sectionViewModels.value[section]
         view.setTitle(sectionViewModel.headerTitle)
         return view
     }

@@ -72,16 +72,15 @@ class UserAccountsController {
         
         let cashAndInvestments = sectionViewModelsFor(userAccounts.assets.cashAndInvestments, title: "Cash and Investments")
         let longTermAssets = sectionViewModelsFor(userAccounts.assets.longTermAssets, title: "Long Term Assets")
-        let assetsViewModel = AssetsTableViewModel()
-        assetsViewModel.sectionViewModels.value = [cashAndInvestments, longTermAssets]
+        let assetsTableViewModel = AccountsTableViewModel(type: .assets)
+        assetsTableViewModel.sectionViewModels.value = [cashAndInvestments, longTermAssets]
         
         let shortTerm = sectionViewModelsFor(userAccounts.liabilities.shortTerm, title: "Short Term Liabilities")
         let longTermDebt = sectionViewModelsFor(userAccounts.liabilities.longTermDebt, title: "Long Term Debt")
-        let liabilitiesViewModel = AssetsTableViewModel()
-        liabilitiesViewModel.sectionViewModels.value = [shortTerm, longTermDebt]
+        let liabilitiesTableViewModel = AccountsTableViewModel(type: .liabilities)
+        liabilitiesTableViewModel.sectionViewModels.value = [shortTerm, longTermDebt]
         
-        self.viewModel.assetsViewModel = assetsViewModel
-        self.viewModel.liabilitiesViewModel = liabilitiesViewModel
+        self.viewModel.tableViewModels.value = [assetsTableViewModel, liabilitiesTableViewModel]
     }
     
     private func sectionViewModelsFor(_ accounts: [Account], title: String) -> SectionViewModel {

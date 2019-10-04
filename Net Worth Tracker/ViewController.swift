@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var viewModel: UserAccountsViewModel {
+        
+        return controller.viewModel
+    }
+    
+    lazy var controller: UserAccountsController = {
+        return UserAccountsController()
+    }()
+    
     fileprivate let tableView: UITableView = {
         let tbl = UITableView()
         tbl.tableFooterView = UIView()
@@ -24,6 +33,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        controller.start()
         
         tableView.backgroundColor = .white
         tableView.dataSource = self
@@ -46,7 +57,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClassIdentifier: FormTableViewCell.self)
         cell.outerRow = indexPath.section
-        cell.tableType = indexPath.row == 0 ? .assets : .liabilities
+        cell.viewModel = viewModel.tableViewModels.value[indexPath.row]
         cell.layoutSubviews()
         return cell
     }
