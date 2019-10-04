@@ -14,5 +14,5 @@ enum AccountType: String {
 
 struct Account {
     var type: String
-    var value: String
+    var value: Double
 }

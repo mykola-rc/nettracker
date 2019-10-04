@@ -8,10 +8,20 @@
 
 import UIKit
 
+enum TableType {
+    case assets
+    case liabilities
+}
+
 class FormTableViewCell: UITableViewCell {
     
     var viewModel: AssetsTableViewModel {
-        return controller.viewModel
+        switch tableType {
+        case .assets:
+            return controller.viewModel.assetsViewModel
+        case .liabilities:
+            return controller.viewModel.liabilitiesViewModel
+        }
     }
     
     lazy var controller: UserAccountsController = {
@@ -37,6 +47,8 @@ class FormTableViewCell: UITableViewCell {
         }
     }
     
+    var tableType: TableType = .assets
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -48,7 +60,6 @@ class FormTableViewCell: UITableViewCell {
         formTableView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         formTableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         formTableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        
         
         initBinding()
         controller.start()
@@ -86,7 +97,6 @@ class FormTableViewCell: UITableViewCell {
 
 extension FormTableViewCell: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
         return viewModel.sectionViewModels.value.count
     }
     

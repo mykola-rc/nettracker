@@ -34,20 +34,20 @@ class AccountValueCell: UITableViewCell, CellConfigurable {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         contentView.addSubview(titleLabel)
+        amountContainer.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(amountContainer)
+        
         titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0).isActive = true
-//        titleLabel.trailingAnchor.constraint(equalTo: amountContainer.leadingAnchor).isActive = true
-        titleLabel.heightAnchor.constraint(equalToConstant: 44.0)
-        
-        amountContainer.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(amountContainer)
+        titleLabel.trailingAnchor.constraint(equalTo: amountContainer.leadingAnchor).isActive = true
+        titleLabel.heightAnchor.constraint(equalToConstant: 44.0).isActive = true
         
         amountContainer.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         amountContainer.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         amountContainer.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: 20.0).isActive = true
         amountContainer.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        amountContainer.widthAnchor.constraint(equalToConstant: contentView.frame.width * 0.35)
+        amountContainer.widthAnchor.constraint(equalToConstant: contentView.frame.width * 0.35).isActive = true
         
         amountTextField.placeholder = "placeholder text"
         amountTextField.textAlignment = .right
@@ -86,11 +86,6 @@ class AccountValueCell: UITableViewCell, CellConfigurable {
 
         // Configure the view for the selected state
     }
-
-//    func configure(_ values: [String]) {
-//        titleLabel.text = values[0]
-//        amountTextField.text = values[1]
-//    }
     
     func configure(viewModel: RowViewModel) {
         

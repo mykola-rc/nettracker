@@ -25,9 +25,9 @@ class FormTableView: UITableView {
         self.showsVerticalScrollIndicator = false
         self.showsHorizontalScrollIndicator = false
         self.tableFooterView = UIView(frame: .zero)
-        self.tableHeaderView = UIView(frame: .zero)
-        self.sectionFooterHeight = 0
-        self.sectionHeaderHeight = 0
+//        self.tableHeaderView = UIView(frame: .zero)
+//        self.sectionFooterHeight = 0
+//        self.sectionHeaderHeight = 0
     }
     
     override open func layoutSubviews() {

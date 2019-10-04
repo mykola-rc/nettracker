@@ -9,6 +9,6 @@
 import Foundation
 
 struct UserAccounts {
-    var assets: [Asset]
-    var liabilities: [Liability]
+    var assets: Assets
+    var liabilities: Liabilities
 }

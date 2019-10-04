@@ -1,5 +1,5 @@
 //
-//  Asset.swift
+//  Liability.swift
 //  Net Worth Tracker
 //
 //  Created by Nick Burinok on 2019-10-03.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Asset {
-    var cashAndInvestments: [Account]
-    var longTermAssets: [Account]
-    var totalAssets: Double
+struct Liabilities {
+    var shortTerm: [Account]
+    var longTermDebt: [Account]
+    var totalLiabilities: Double
 }

@@ -37,34 +37,14 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClassIdentifier: FormTableViewCell.self)
         cell.outerRow = indexPath.section
+        cell.tableType = indexPath.row == 0 ? .assets : .liabilities
         cell.layoutSubviews()
         return cell
-    }
-}
-
-extension ViewController: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.item % 2 == 0 {
-            let cellTitle = ""
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AccountNameCell.reuseIdentifier, for: indexPath) as! AccountNameCell
-            cell.configure(cellTitle)
-            return cell
-        } else {
-            let accountAmount = "" // accountNames[indexPath.item]
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AccountAmountCell.reuseIdentifier, for: indexPath) as! AccountAmountCell
-            cell.configure(accountAmount)
-            return cell
-        }
     }
 }

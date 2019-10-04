@@ -18,9 +18,9 @@
 		8C88878A23443342003E4D2A /* AccountAmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88878923443342003E4D2A /* AccountAmountCell.swift */; };
 		8C88878C234433A6003E4D2A /* AccountNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88878B234433A6003E4D2A /* AccountNameCell.swift */; };
 		D90B1DC123468E6B00FA09BB /* UserAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DC023468E6B00FA09BB /* UserAccounts.swift */; };
-		D90B1DC42346903E00FA09BB /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DC32346903E00FA09BB /* Asset.swift */; };
+		D90B1DC42346903E00FA09BB /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DC32346903E00FA09BB /* Assets.swift */; };
 		D90B1DC6234690E300FA09BB /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DC5234690E300FA09BB /* Account.swift */; };
-		D90B1DC82346915200FA09BB /* Liability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DC72346915200FA09BB /* Liability.swift */; };
+		D90B1DC82346915200FA09BB /* Liabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DC72346915200FA09BB /* Liabilities.swift */; };
 		D90B1DCA2346985500FA09BB /* AccountValueCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DC92346985500FA09BB /* AccountValueCellViewModel.swift */; };
 		D90B1DCD234698A300FA09BB /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DCC234698A300FA09BB /* RowViewModel.swift */; };
 		D90B1DCF234699CC00FA09BB /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DCE234699CC00FA09BB /* Double+Extensions.swift */; };
@@ -30,6 +30,7 @@
 		D90B1DD72346B16D00FA09BB /* AssetsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DD62346B16D00FA09BB /* AssetsTableViewModel.swift */; };
 		D90B1DD92346B1D600FA09BB /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DD82346B1D600FA09BB /* SectionViewModel.swift */; };
 		D90B1DDC2346C0E200FA09BB /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DDB2346C0E200FA09BB /* SectionHeaderView.swift */; };
+		D9B305362346D96A00D10845 /* UserAccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B305352346D96A00D10845 /* UserAccountsViewModel.swift */; };
 		D9CCA43623452CD9001FB88A /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CCA43523452CD9001FB88A /* UITableViewCell+Extensions.swift */; };
 		D9CCA43923452D71001FB88A /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CCA43823452D71001FB88A /* UITableView+Extensions.swift */; };
 		D9CCA43B23452DAF001FB88A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CCA43A23452DAF001FB88A /* UIView+Extensions.swift */; };
@@ -73,9 +74,9 @@
 		8C88878923443342003E4D2A /* AccountAmountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAmountCell.swift; sourceTree = "<group>"; };
 		8C88878B234433A6003E4D2A /* AccountNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNameCell.swift; sourceTree = "<group>"; };
 		D90B1DC023468E6B00FA09BB /* UserAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccounts.swift; sourceTree = "<group>"; };
-		D90B1DC32346903E00FA09BB /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		D90B1DC32346903E00FA09BB /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		D90B1DC5234690E300FA09BB /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		D90B1DC72346915200FA09BB /* Liability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Liability.swift; sourceTree = "<group>"; };
+		D90B1DC72346915200FA09BB /* Liabilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Liabilities.swift; sourceTree = "<group>"; };
 		D90B1DC92346985500FA09BB /* AccountValueCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountValueCellViewModel.swift; sourceTree = "<group>"; };
 		D90B1DCC234698A300FA09BB /* RowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
 		D90B1DCE234699CC00FA09BB /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		D90B1DD62346B16D00FA09BB /* AssetsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsTableViewModel.swift; sourceTree = "<group>"; };
 		D90B1DD82346B1D600FA09BB /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
 		D90B1DDB2346C0E200FA09BB /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		D9B305352346D96A00D10845 /* UserAccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountsViewModel.swift; sourceTree = "<group>"; };
 		D9CCA43523452CD9001FB88A /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		D9CCA43823452D71001FB88A /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		D9CCA43A23452DAF001FB88A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -194,8 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				D90B1DC023468E6B00FA09BB /* UserAccounts.swift */,
-				D90B1DC32346903E00FA09BB /* Asset.swift */,
-				D90B1DC72346915200FA09BB /* Liability.swift */,
+				D90B1DC32346903E00FA09BB /* Assets.swift */,
+				D90B1DC72346915200FA09BB /* Liabilities.swift */,
 				D90B1DC5234690E300FA09BB /* Account.swift */,
 			);
 			path = Models;
@@ -208,6 +210,7 @@
 				D90B1DC92346985500FA09BB /* AccountValueCellViewModel.swift */,
 				D90B1DD82346B1D600FA09BB /* SectionViewModel.swift */,
 				D90B1DD62346B16D00FA09BB /* AssetsTableViewModel.swift */,
+				D9B305352346D96A00D10845 /* UserAccountsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -371,14 +374,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90B1DD123469A2F00FA09BB /* Observable.swift in Sources */,
-				D90B1DC82346915200FA09BB /* Liability.swift in Sources */,
+				D90B1DC82346915200FA09BB /* Liabilities.swift in Sources */,
 				8C88875B23442BBC003E4D2A /* ViewController.swift in Sources */,
-				D90B1DC42346903E00FA09BB /* Asset.swift in Sources */,
+				D90B1DC42346903E00FA09BB /* Assets.swift in Sources */,
 				D90B1DC123468E6B00FA09BB /* UserAccounts.swift in Sources */,
 				D9CCA43923452D71001FB88A /* UITableView+Extensions.swift in Sources */,
 				D90B1DD92346B1D600FA09BB /* SectionViewModel.swift in Sources */,
 				D90B1DD52346AFA000FA09BB /* UserAccountController.swift in Sources */,
 				D9CCA43D23452E49001FB88A /* FormTableView.swift in Sources */,
+				D9B305362346D96A00D10845 /* UserAccountsViewModel.swift in Sources */,
 				D9CCA44023452EEB001FB88A /* FormTableViewCell.swift in Sources */,
 				D9CCA43623452CD9001FB88A /* UITableViewCell+Extensions.swift in Sources */,
 				8C88878C234433A6003E4D2A /* AccountNameCell.swift in Sources */,
