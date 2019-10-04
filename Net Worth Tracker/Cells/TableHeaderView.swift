@@ -1,14 +1,14 @@
 //
-//  SectionHeaderView.swift
+//  TableHeaderView.swift
 //  Net Worth Tracker
 //
-//  Created by Nick Burinok on 2019-10-03.
+//  Created by Mykola Burynok on 2019-10-04.
 //  Copyright © 2019 Mykola Burynok. All rights reserved.
 //
 
 import UIKit
 
-public class SectionHeaderView: UIView {
+public class TableHeaderView: UIView {
     private lazy var topSeparator: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -23,7 +23,7 @@ public class SectionHeaderView: UIView {
         self.addSubview(label)
 
         label.font = UIFont.boldSystemFont(ofSize: 16.0)
-        label.textColor = UIColor.gray
+        label.textColor = UIColor.darkGreen
         return label
     }()
 
@@ -54,6 +54,11 @@ public class SectionHeaderView: UIView {
     private func setupInitialView() {
         self.backgroundColor = UIColor.white
     }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        
+    }
 
     private func setupConstrint() {
 
@@ -65,12 +70,11 @@ public class SectionHeaderView: UIView {
         ])
         
         NSLayoutConstraint.activate(titleLabel.edgeConstraints(top: 5, left: 20, bottom: 5, right: 10))
-        titleLabel.heightAnchor.constraint(equalToConstant: 44.0).isActive = true
 
         NSLayoutConstraint.activate([
             bottomSeparator.leftAnchor.constraint(equalTo: self.leftAnchor),
             bottomSeparator.rightAnchor.constraint(equalTo: self.rightAnchor),
-            bottomSeparator.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -1),
+            bottomSeparator.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 1),
             bottomSeparator.heightAnchor.constraint(equalToConstant: 1)
         ])
     }

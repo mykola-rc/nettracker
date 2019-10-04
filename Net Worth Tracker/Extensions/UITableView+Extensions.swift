@@ -15,6 +15,11 @@ extension UITableView {
         self.estimatedRowHeight = height
     }
     
+    public func estimatedSectionHeaderHeight(_ height: CGFloat) {
+        self.sectionHeaderHeight = UITableView.automaticDimension
+        self.estimatedSectionHeaderHeight = 50.0
+    }
+    
     func dequeueReusableCell<T : UITableViewCell>(withClassIdentifier cell: T.Type) -> T {
         if let Cell = dequeueReusableCell(withIdentifier: String(describing: cell.self)) as? T {
             return Cell

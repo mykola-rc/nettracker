@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         let tbl = UITableView()
         tbl.tableFooterView = UIView()
         tbl.estimatedRowHeight(50)
+        let headerView = MainHeaderView(frame: CGRect(x: 0.0, y: 0.0, width: 414, height: 44.0))
+        headerView.setTitle("Net Worth")
+        tbl.tableHeaderView = headerView
         tbl.registerClass(FormTableViewCell.self)
         tbl.translatesAutoresizingMaskIntoConstraints = false
         return tbl

@@ -15,8 +15,10 @@
 		8C88876323442BBD003E4D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C88876123442BBD003E4D2A /* LaunchScreen.storyboard */; };
 		8C88876E23442BBD003E4D2A /* Net_Worth_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88876D23442BBD003E4D2A /* Net_Worth_TrackerTests.swift */; };
 		8C88877923442BBD003E4D2A /* Net_Worth_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88877823442BBD003E4D2A /* Net_Worth_TrackerUITests.swift */; };
-		8C88878A23443342003E4D2A /* AccountAmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88878923443342003E4D2A /* AccountAmountCell.swift */; };
-		8C88878C234433A6003E4D2A /* AccountNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C88878B234433A6003E4D2A /* AccountNameCell.swift */; };
+		8CD876352347076C00466C15 /* TableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD876342347076C00466C15 /* TableFooterView.swift */; };
+		8CD87637234708A800466C15 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD87636234708A800466C15 /* TableHeaderView.swift */; };
+		8CD876392347101C00466C15 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD876382347101C00466C15 /* UIColor+Extensions.swift */; };
+		8CD8763B234712F300466C15 /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD8763A234712F300466C15 /* MainHeader.swift */; };
 		D90B1DC123468E6B00FA09BB /* UserAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DC023468E6B00FA09BB /* UserAccounts.swift */; };
 		D90B1DC42346903E00FA09BB /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DC32346903E00FA09BB /* Assets.swift */; };
 		D90B1DC6234690E300FA09BB /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B1DC5234690E300FA09BB /* Account.swift */; };
@@ -71,8 +73,10 @@
 		8C88877423442BBD003E4D2A /* Net Worth TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Net Worth TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C88877823442BBD003E4D2A /* Net_Worth_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Net_Worth_TrackerUITests.swift; sourceTree = "<group>"; };
 		8C88877A23442BBD003E4D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C88878923443342003E4D2A /* AccountAmountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAmountCell.swift; sourceTree = "<group>"; };
-		8C88878B234433A6003E4D2A /* AccountNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNameCell.swift; sourceTree = "<group>"; };
+		8CD876342347076C00466C15 /* TableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFooterView.swift; sourceTree = "<group>"; };
+		8CD87636234708A800466C15 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		8CD876382347101C00466C15 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		8CD8763A234712F300466C15 /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
 		D90B1DC023468E6B00FA09BB /* UserAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccounts.swift; sourceTree = "<group>"; };
 		D90B1DC32346903E00FA09BB /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		D90B1DC5234690E300FA09BB /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -183,11 +187,12 @@
 			isa = PBXGroup;
 			children = (
 				D90B1DD223469B2D00FA09BB /* CellConfigurable.swift */,
-				8C88878B234433A6003E4D2A /* AccountNameCell.swift */,
-				8C88878923443342003E4D2A /* AccountAmountCell.swift */,
 				D9CCA43F23452EEB001FB88A /* FormTableViewCell.swift */,
 				D9CCA4412345392C001FB88A /* AccountValueCell.swift */,
 				D90B1DDB2346C0E200FA09BB /* SectionHeaderView.swift */,
+				8CD876342347076C00466C15 /* TableFooterView.swift */,
+				8CD87636234708A800466C15 /* TableHeaderView.swift */,
+				8CD8763A234712F300466C15 /* MainHeader.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				D9CCA43823452D71001FB88A /* UITableView+Extensions.swift */,
 				D9CCA43A23452DAF001FB88A /* UIView+Extensions.swift */,
 				D90B1DCE234699CC00FA09BB /* Double+Extensions.swift */,
+				8CD876382347101C00466C15 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -373,25 +379,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD876352347076C00466C15 /* TableFooterView.swift in Sources */,
 				D90B1DD123469A2F00FA09BB /* Observable.swift in Sources */,
 				D90B1DC82346915200FA09BB /* Liabilities.swift in Sources */,
+				8CD876392347101C00466C15 /* UIColor+Extensions.swift in Sources */,
 				8C88875B23442BBC003E4D2A /* ViewController.swift in Sources */,
 				D90B1DC42346903E00FA09BB /* Assets.swift in Sources */,
 				D90B1DC123468E6B00FA09BB /* UserAccounts.swift in Sources */,
 				D9CCA43923452D71001FB88A /* UITableView+Extensions.swift in Sources */,
 				D90B1DD92346B1D600FA09BB /* SectionViewModel.swift in Sources */,
 				D90B1DD52346AFA000FA09BB /* UserAccountController.swift in Sources */,
+				8CD87637234708A800466C15 /* TableHeaderView.swift in Sources */,
 				D9CCA43D23452E49001FB88A /* FormTableView.swift in Sources */,
 				D9B305362346D96A00D10845 /* UserAccountsViewModel.swift in Sources */,
 				D9CCA44023452EEB001FB88A /* FormTableViewCell.swift in Sources */,
 				D9CCA43623452CD9001FB88A /* UITableViewCell+Extensions.swift in Sources */,
-				8C88878C234433A6003E4D2A /* AccountNameCell.swift in Sources */,
+				8CD8763B234712F300466C15 /* MainHeader.swift in Sources */,
 				D90B1DD323469B2D00FA09BB /* CellConfigurable.swift in Sources */,
 				8C88875723442BBC003E4D2A /* AppDelegate.swift in Sources */,
 				D9CCA4422345392C001FB88A /* AccountValueCell.swift in Sources */,
 				D90B1DCD234698A300FA09BB /* RowViewModel.swift in Sources */,
 				D90B1DCF234699CC00FA09BB /* Double+Extensions.swift in Sources */,
-				8C88878A23443342003E4D2A /* AccountAmountCell.swift in Sources */,
 				D9CCA43B23452DAF001FB88A /* UIView+Extensions.swift in Sources */,
 				D90B1DDC2346C0E200FA09BB /* SectionHeaderView.swift in Sources */,
 				D90B1DD72346B16D00FA09BB /* AssetsTableViewModel.swift in Sources */,

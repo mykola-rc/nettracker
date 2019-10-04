@@ -53,11 +53,11 @@ class UserAccountsController {
         ]
         
         let longTermDebtLiabilities = [
-            Account(type: "Mortgage 1", value: 4_342.00),
-            Account(type: "Mortgage 2", value: 322.00),
-            Account(type: "Line of Credit", value: 0),
-            Account(type: "Investment Loan", value: 4_342.00),
-            Account(type: "Student Loan", value: 322.00),
+            Account(type: "Mortgage 1", value: 250_999.00),
+            Account(type: "Mortgage 2", value: 632_634.00),
+            Account(type: "Line of Credit", value: 10_000.00),
+            Account(type: "Investment Loan", value: 10_000.00),
+            Account(type: "Student Loan", value: 0),
             Account(type: "Car Loan", value: 0)
         ]
         

@@ -25,8 +25,8 @@ class FormTableView: UITableView {
         self.showsVerticalScrollIndicator = false
         self.showsHorizontalScrollIndicator = false
         self.tableFooterView = UIView(frame: .zero)
-//        self.tableHeaderView = UIView(frame: .zero)
-//        self.sectionFooterHeight = 0
+        
+//        self.sectionFooterHeight = 60
 //        self.sectionHeaderHeight = 0
     }
     

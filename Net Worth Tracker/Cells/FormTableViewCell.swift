@@ -31,11 +31,17 @@ class FormTableViewCell: UITableViewCell {
     fileprivate let formTableView: FormTableView = {
         let tbl = FormTableView()
         tbl.estimatedRowHeight(50)
-        tbl.rowHeight = UITableView.automaticDimension
-        tbl.sectionHeaderHeight = 50.0
+        tbl.estimatedSectionHeaderHeight(50)
+        let headerView = TableHeaderView(frame: CGRect(x: 0.0, y: 0.0, width: 414, height: 44.0))
+        headerView.setTitle("Assets")
+        tbl.tableHeaderView = headerView
+        let footerView = TableFooterView(frame: CGRect(x: 0.0, y: 0.0, width: 414, height: 44.0))
+        //        let sectionViewModel = viewModel.sectionViewModels.value[0]
+        footerView.setTitle("Total Assets")
+        tbl.tableFooterView = footerView
         tbl.translatesAutoresizingMaskIntoConstraints = false
+        tbl.separatorStyle = .none
         tbl.registerClass(AccountValueCell.self)
-        tbl.registerClass(UITableViewCell.self)
         // set an initial value to calculate a dynamic height
         tbl.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
         return tbl
@@ -90,6 +96,7 @@ class FormTableViewCell: UITableViewCell {
         super.layoutSubviews()
         
         formTableView.layoutSubviews()
+        // Recalculates height
         superTableView?.beginUpdates()
         superTableView?.endUpdates()
     }
