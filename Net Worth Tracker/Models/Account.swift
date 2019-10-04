@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum AccountType: String {
+enum AccountType: String, Codable {
     case chequing
 }
 
-struct Account {
+struct Account: Codable {
     var type: String
     var value: Double
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UserAccounts {
+struct UserAccounts: Codable {
     var assets: Assets
     var liabilities: Liabilities
 }

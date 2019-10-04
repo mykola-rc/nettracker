@@ -46,12 +46,21 @@ class ViewController: UIViewController {
         tableView.bottomAnchor.constraint(equalTo: guide.bottomAnchor).isActive = true
         tableView.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
+        
+        initBinding()
+    }
+    
+    private func initBinding() {
+        
+        viewModel.tableViewModels.addObserver(fireNow: false) { [weak self] (sectionViewModels) in
+            self?.tableView.reloadData()
+        }
     }
 }
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return viewModel.tableViewModels.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

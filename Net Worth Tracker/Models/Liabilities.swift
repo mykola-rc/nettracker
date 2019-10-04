@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Liabilities {
+struct Liabilities: Codable {
     var shortTerm: [Account]
     var longTermDebt: [Account]
     var totalLiabilities: Double

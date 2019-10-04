@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Assets {
+struct Assets: Codable {
     var cashAndInvestments: [Account]
     var longTermAssets: [Account]
     var totalAssets: Double
