@@ -10,13 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-//    private let numberOfColumns: CGFloat = 2.0
-//    private let cellHeight: CGFloat = 44.0
-    
     fileprivate let tableView: UITableView = {
         let tbl = UITableView()
         tbl.tableFooterView = UIView()
-        tbl.estimatedRowHeight(100)
+        tbl.estimatedRowHeight(50)
         tbl.registerClass(FormTableViewCell.self)
         tbl.translatesAutoresizingMaskIntoConstraints = false
         return tbl
@@ -36,11 +33,6 @@ class ViewController: UIViewController {
         tableView.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
     }
-    
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        
-    }
 }
 
 extension ViewController: UITableViewDataSource {
@@ -59,12 +51,12 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0 // accountNames.count
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.item % 2 == 0 {
-            let cellTitle = "" // accountNames[indexPath.item]
+            let cellTitle = ""
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AccountNameCell.reuseIdentifier, for: indexPath) as! AccountNameCell
             cell.configure(cellTitle)
             return cell

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AccountValueCell: UITableViewCell {
+class AccountValueCell: UITableViewCell, CellConfigurable {
 
     fileprivate let titleLabel: UILabel = {
         let lbl = UILabel()
@@ -27,6 +27,8 @@ class AccountValueCell: UITableViewCell {
         txf.translatesAutoresizingMaskIntoConstraints = false
         return txf
     }()
+    
+    var viewModel: AccountValueCellViewModel?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -85,8 +87,17 @@ class AccountValueCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func configure(_ values: [String]) {
-        titleLabel.text = values[0]
-        amountTextField.text = values[1]
+//    func configure(_ values: [String]) {
+//        titleLabel.text = values[0]
+//        amountTextField.text = values[1]
+//    }
+    
+    func configure(viewModel: RowViewModel) {
+        
+        guard let viewModel = viewModel as? AccountValueCellViewModel else { return }
+        self.viewModel = viewModel
+        
+        titleLabel.text = viewModel.title
+        amountTextField.text = viewModel.textFieldValue
     }
 }

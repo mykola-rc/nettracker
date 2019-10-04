@@ -21,4 +21,9 @@ extension UITableViewCell {
 
         return view as? UITableView
     }
+    
+    /// Generated cell identifier derived from class name
+    public static func cellIdentifier() -> String {
+        return String(describing: self)
+    }
 }
