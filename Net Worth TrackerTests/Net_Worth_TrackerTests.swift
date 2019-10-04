@@ -11,24 +11,43 @@ import XCTest
 
 class Net_Worth_TrackerTests: XCTestCase {
 
+    var controllerWithMockData: UserAccountsController!
     var controller: UserAccountsController!
+    var dataProvider: DataProvider!
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        controller = UserAccountsController(viewModel: UserAccountsViewModel(), apiService: MockDataProvider())
+        controllerWithMockData = UserAccountsController(viewModel: UserAccountsViewModel(), apiService: MockDataProvider())
+        controller = UserAccountsController(viewModel: UserAccountsViewModel(), apiService: DataProvider())
+        dataProvider = DataProvider()
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testUserContollerMockDataGeneration() {
+    func testUserContollerMockDataProvider() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        controller.start()
+        controllerWithMockData.start()
+        XCTAssertGreaterThan(controllerWithMockData.viewModel.tableViewModels.value.count, 0)
+    }
+    
+    func testUserContollerDataProvider() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        XCTAssertEqual(controller.viewModel.tableViewModels.value.count, 2)
+        let expect = expectation(description: "Data provider calls 'APIService' to access server data and returns User's Accounts.")
+        dataProvider.fetchUserAccounts { userAccounts in
+            XCTAssert(userAccounts.assets.cashAndInvestments.count > 0)
+            expect.fulfill()
+        }
+        waitForExpectations(timeout: 4) { error in
+            if let error = error {
+                XCTFail("waitForExpectationsWithTimeout error: \(error)")
+            }
+        }
     }
 
     func testPerformanceExample() {
