@@ -15,7 +15,7 @@ class Net_Worth_TrackerTests: XCTestCase {
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        controller = UserAccountsController()
+        controller = UserAccountsController(viewModel: UserAccountsViewModel(), apiService: MockDataProvider())
     }
 
     override func tearDown() {

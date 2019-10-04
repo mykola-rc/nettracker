@@ -11,14 +11,16 @@ import Foundation
 class UserAccountsController {
     
     var viewModel: UserAccountsViewModel
+    let apiService: Service
     
-    init(viewModel: UserAccountsViewModel = UserAccountsViewModel()) {
+    init(viewModel: UserAccountsViewModel = UserAccountsViewModel(), apiService: Service = DataProvider()) {
         self.viewModel = viewModel
+        self.apiService = apiService
     }
     
     public func start() {
         
-        DataProvider.shared.fetchUserAccounts { accounts in
+        apiService.fetchUserAccounts { accounts in
             self.buildUserAccountsViewModel(userAccounts: accounts)
         }
     }

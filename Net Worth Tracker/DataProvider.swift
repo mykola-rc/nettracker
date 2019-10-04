@@ -8,9 +8,11 @@
 
 import Foundation
 
-class DataProvider {
-    
-    static let shared = DataProvider()
+protocol Service {
+    func fetchUserAccounts(complete: @escaping (UserAccounts) -> Void)
+}
+
+class DataProvider: Service {
     
     /// Fetch feeds from server
     public func fetchUserAccounts(complete: @escaping (UserAccounts) -> Void) {
@@ -32,5 +34,15 @@ class DataProvider {
                 complete(userAccounts)
             }
         }
+    }
+}
+
+class MockDataProvider: Service {
+    
+    /// Fetch feeds from server
+    public func fetchUserAccounts(complete: @escaping (UserAccounts) -> Void) {
+        
+        let userAccounts = UserAccountsFactory.shared().getSampleUserAccounts()
+        complete(userAccounts)
     }
 }
